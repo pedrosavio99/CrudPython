@@ -88,9 +88,6 @@ python-dateutil==2.8.1
 python-telegram-bot==13.7
 pyttsx3==2.90
 PyTweening==1.0.3
-pytz==2021.1
-pywin32==300
-pywin32-ctypes==0.2.0
 PyYAML==5.4.1
 regex==2020.11.13
 requests==2.25.1
@@ -121,10 +118,8 @@ urllib3==1.26.3
 websocket-client==0.57.0
 Werkzeug==1.0.1
 whitenoise==5.3.0
-wikipedia==1.4.0
 wrapt==1.12.1
 yarl==1.6.3
-yfinance==0.1.59
 zipp==3.4.1
 zope.interface==5.2.0
 gunicorn==20.0.4
