@@ -1,0 +1,158 @@
+iniciar um projeto django :
+
+ django-admin startproject project .
+
+criar o app 
+
+python manage.py startapp app
+
+
+
+==========================
+    'app'   #OLHA AQUI EU COLOQUEI DENTRO DA PASTA PROJECT EM SETTINGS O NOME DO NOSSO APP
+]
+
+
+===============================
+
+from app.views import home  #aqui na pasta urls de project importei a visualização do app
+
+
+=====================================
+implementação da view 
+
+from django.shortcuts import render
+from django.http import HttpResponse
+
+# Create your views here.
+def home(request):
+    return HttpResponse('Hello word!')
+
+=========================================
+
+no cmd digite esse comaNDO PRA RODAR SEU SERVER :
+
+python manage.py runserver
+
+
+==============================
+pasta template criada e dentro dela criar o index.html
+
+
+depois ir em views e :     return render(request,'index.html')
+
+
+==========================
+
+criar o form.html e adicionar no urls 
+e depois criar sua chamada no view pra ser renderizado 
+def form():
+    return render(request, 'form.html')
+
+
+============================================
+
+banco de dados
+
+implementar o models na pasta app
+depos desliga o server com o crtl c e digite isso pra criar a classe que vc implemntou no models:
+
+        python manage.py makemigrations
+
+ai depois de fazer isso vc vai em migrations no arquivo 0001inital e vê sua classe la criada
+
+e agr pra criar o banco de dados digite:
+
+        python manage.py migrate
+
+apos isso em project vc verifica que criou a pasta 
+
+
+
+depos vc vai na razi do projeto no caso na pasta app e cria o arquivo forms.py e depois linkar ele no views
+
+
+=====================================================================
+
+crear e ler dados
+
+ir em urls em project e add a instancia create
+
+depois criar a view create 
+
+===================================
+javascript pra confirmaçãop do deletar: https://www.youtube.com/watch?v=jzmXruc_wFs
+
+
+======================================
+
+
+
+
+DEPLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOY
+
+vai ser no heroku: https://signup.heroku.com/login login com o 777 e senha = aec
+
+ai tem que baixar o heroco cli : https://devcenter.heroku.com/articles/heroku-cli#download-and-install 
+
+e o github estar conectado
+
+
+siga os passos: 
+
+heroku login
+
+
+se der erro kkkk faz isso: ]
+
+You're probably using an old version or the deprecated package 'heroku-cli'. The new one is just called 'heroku'
+Uninstall that by npm uninstall -g heroku-cli
+Then install the new package npm i -g heroku
+
+sempra da erro tem que ser pelo terminal mesmo kkkkkkkkkkkkk
+
+
+depos vem o pip install django_heroku
+
+
+depois vai no seu projeto na pasta project em setings.py e importa isso :
+
+import django_heroku
+
+
+e no final de settings.py cola 
+
+django_heroku.settings(locals())
+
+
+depois vamos fazer o freeze pra pegar tudo oq agente usou no projeto
+
+pip freeze > requirements.txt
+
+
+
+depos na raiz do projeto criar um arquivo chamado Procfile sem extensão nenhuma
+
+e dentro dele, colar : web: gunicorn project.wsgi 
+
+
+
+logo apos isso volta pro cmd e digita o git init
+
+
+vamos upar no heroku
+
+heroku git:remote -a crudsavio   se liga que esse crud savio é o nome do projeto ein cabeção
+
+
+
+depois vamo de add todos os arquivos
+
+
+git add .
+
+
+
+
+
+
