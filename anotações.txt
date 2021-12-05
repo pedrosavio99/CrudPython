@@ -152,6 +152,12 @@ depois vamo de add todos os arquivos
 git add .
 
 
+git commit -m "primeiro envio"
+
+
+git push heroku master
+
+
 
 
 
