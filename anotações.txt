@@ -158,6 +158,26 @@ git commit -m "primeiro envio"
 git push heroku master
 
 
+mano vai dar um monte de bo nos requiremnts  ai tu so deixa esses aqui ó 
+
+asgiref==3.4.1
+dj-database-url==0.5.0
+Django==3.2.9
+django-heroku==0.3.1
+psycopg2==2.9.2
+pytz==2019.3
+sqlparse==0.4.2
+whitenoise==5.3.0
+gunicorn==20.0.4
+e da o deploy normal
+
+
+agr vem o envio do banco de dados:
+
+
+heroku run python manage.py migrate
+
+
 
 
 
